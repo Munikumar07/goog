@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/icons8-portfolio-48.png" type="img/png">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><span>M</span>uni</a>
+      
+        <ul class="navbar">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html"class="active" >ABOUT</a></li>
+          <li><a href="portfolio.html" >PORTFOLIO</a></li>
+          
+          <li><a href="service.html" >SERVICES</a></li>
+          <li><a href="contact.html" >CONTACT</a></li>
+        </ul>
+
+        <div class="menu-btn">
+          <span>INTRO</span>
+          <div class="bx bx-menu" id="menu-btn"></div>
+        </div>
+    </header>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                
+                <div class="about-col-2">
+                    <h2 class="sub-title"><span>A</span>bout Me</h2>
+                    <p>"Experienced video editor with a three-year track record of seamlessly blending technical skills with creative storytelling. My work reflects a confident and innovative approach, transforming concepts into visually compelling narratives."
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('technical')">Techincal Skills</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="technical">
+                        <ul>
+                            <li><span>•</span> Story Making</BR></li>
+                            <li><span>•</span> creative Editing</BR></li>
+                            <li><span>•</span> StorTelling</BR></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>•</span> Video Editing</BR></li>
+                            <li><span>•</span> Video Editor Intern</BR></li>
+                            <li><span>•</span> Capcut</BR></li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>•</span> I Have 3-years of proficiency in using Software like </BR></li>
+                            <li><span>•</span> Capcut (3-years)</BR></li>
+                            <li><span>•</span> Davinisi resolve (1-years)</BR></li>
+                            <li><span>•</span> Adobe Premier pro (6-months)</BR></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+       
+    
+
+    <script src="https://unpkg.com//scrollreveal"></script>
+        
+    <script src="js.js" type="text/javascript"></script>
+
+</body>
+</html>

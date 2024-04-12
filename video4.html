@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<link rel="icon" href="images/icons8-portfolio-48.png" type="img/png">
+<script src="https://kit.fontawesome.com/8994f127a2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><span>M</span>uni</a>
+      
+        <nav class="navbar">
+            <a href="#home" class="active">HOME</a>
+            <a href="#about" >ABOUT</a>
+            <a href="#portfolio" >PORTFOLIO</a>
+            <a href="#services" >SERVICES</a> 
+            <a href="#contact" >CONTACT</a>
+         </nav> 
+
+        <div class="menu-btn">
+          <span>INTRO</span>
+          <div class="bx bx-menu" id="menu-btn"></div>
+        </div>
+    </header>
+
+    <h3 class="heading"> Cinematic Videos</h3>
+
+    <div class="video-gallery">
+
+        <div class="main-video">
+            <div class="vid">
+                <video src="images/a417634f-3dbb-4c1e-85c6-db0a02f17ec9.mp4" muted ></video>
+                
+            </div>
+        </div>
+
+        <div class="video-list">
+            <div class="vid active">
+                <video src="images/a417634f-3dbb-4c1e-85c6-db0a02f17ec9.mp4" muted ></video>
+                <h3 class="video-title">01. Thor Edit</h>
+            </div>
+            
+            
+            
+            
+        </div>
+    </div>
+
+    <script>
+
+        let listVideo = document.querySelectorAll('.video-list .vid');
+        let mainVideo = document.querySelector('.main-video video');
+        let title = document.querySelector('.main-video .title');
+
+        listVideo.forEach(video =>{
+            video.onclick = () =>{
+                listVideo.forEach(vid => vid.classList.remove('active'));
+                video.classList.add('active');
+                if(video.classList.contains('active')){
+                    let src = video.children[0].getAttribute('src');
+                    mainVideo.src = src;
+                    let text = video.children[1].innerHTML;
+                    title.innerHTML = text;
+                }
+            }
+        })
+
+    </script>
+</body>
+</html>
