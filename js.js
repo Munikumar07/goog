@@ -11,8 +11,8 @@ menu.onclick = function() {
 const sr = ScrollReveal ({
     distance: '20px',
     duration: 100,
-    resize: true
-});
+    resize: true,
+})
 
 sr.reveal('.logo',{delay: 200, origin: 'left'});
 sr.reveal('.navbar',{delay: 400, origin: 'top'});
