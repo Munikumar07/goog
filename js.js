@@ -10,7 +10,7 @@ menu.onclick = function() {
 
 const sr = ScrollReveal ({
     distance: '20px',
-    duration: 1000,
+    duration: 100,
     resize: true
 });
 
